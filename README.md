@@ -1,22 +1,30 @@
 # FastModule
 
-Quickly create Swift projects for componentization using ruby
+> [In Chiness](https://github.com/rakuyoMo/FastModule/blob/master/README_CN.md)
 
-This project simplifies many steps based on my habits and needs, and makes it look less easy to configure.
+> This project only provides a viable method and implements it. It may not be simple and elegant, but I still hope it will help you.
 
-This project is just to provide a workable idea, it may not be concise and elegant, but still hope to help you.
+Quickly create Swift base projects for componentization using Ruby scripts.
 
-Having said that, I feel it necessary to elaborate on my "habits".
+This project simplifies many steps based on my personal habits and needs, so it doesn't look so flexible or even difficult to adapt to suit your needs. But don't worry, "Usage Method" introduces the easiest steps to use, and by reading the source code, I believe you can also quickly transform the project to meet your needs.
 
-1. I manage my components with `Workspace` and `CocoaPods`
+Having said that, it is necessary to mention "my personal habits":
 
-2.  All my components and projects have the same name, for example, I have a component called `ExampleModule`, then I will create a project called `ExampleModule`
+1. All of my projects are written in Swift, so this project does not provide Objective-C template code.
 
-3. I will create two projects, `ExampleModule` and `ExampleModuleRouter`, which serve as the routing template for this component, and then add these two items to a `Workspace`
+2. For each component, I will almost always create two projects: `ExampleModule` and `ExampleModuleRouter`,
+
+3. I use the same `Workspace` to manage the above two projects and use `CocoaPods` to manage dependencies.
+
+4. `ExampleModuleRouter` depends on [URLNavigator](https://github.com/devxoul/URLNavigator) as the module's **routing component**.
+
+5. `ExampleModule` will depend on `ExampleModuleRouter`. For details, please refer to [Podfile](https://github.com/rakuyoMo/FastModule/blob/master/Podfile) file of this project.
 
 # Usage
 
-1. `fork` this project, then modify the template file according to your actual needs (remember to replace the repo url in  [fast_create_module.rb](https://github.com/rakuyoMo/FastModule/blob/master/fast_create_module.rb))
+
+
+1. `fork` this project, then modify the template project according to your needs (remember to replace the git url of the template project in the [fast_create_module.rb](https://github.com/rakuyoMo/FastModule/blob/master/fast_create_module.rb) with the url after your `fork`)
 
 ```ruby
 def clone_template
@@ -27,29 +35,31 @@ def clone_template
 end
 ```
 
-2. On GitHub or other code repository hosts, create your component repo and clone it
+2. On GitHub or other code repository hosts, create your component repo and clone it.
 
 3. Open the command line and `cd` to the directory of the project cloned in the second step.
 
-4. `ruby fast_create_module.rb` or other methods to execute this script
+4. `ruby fast_create_module.rb` or other methods to execute this script.
 
-Wait a moment, you will get the configured project
+After a while, you will get a configured base project.
 
 # Example
 
-For example, I now need a component called `ExampleModule`
+For example, now I need a component called `ExampleModule`:
 
-1. `fork` this project and repo url in  [fast_create_module.rb](https://github.com/rakuyoMo/FastModule/blob/master/fast_create_module.rb)
+1. `fork` this project and modify the URL in the [fast_create_module.rb](https://github.com/rakuyoMo/FastModule/blob/master/fast_create_module.rb).
 
-2. Open GitHub and create a project called `ExampleModule` with an url like this: `https://github.com/rakuyoMo/ExampleModule.git`
+2. Clone the project locally, for example to the desktop: `/Users/rakuyo/Desktop`
 
-3. Clone this project to the local, the path is probably like this: `/Users/mbcore/Desktop/WorkSpace/ExampleModule`
+3. Open GitHub and create a project called `ExampleModule` with an url like this: `https://github.com/rakuyoMo/ExampleModule.git`
 
-4. `cd /Users/mbcore/Desktop/WorkSpace/ExampleModule`
+4. Clone this project to the local, the path is probably like this: `/Users/rakuyo/Desktop/ExampleModule`
 
-5. `ruby fast_create_module.rb`
+5. `cd /Users/rakuyo/Desktop/ExampleModule`
 
-After the script is executed, if everything is successful, the directory will become like this:
+5. `ruby /Users/rakuyo/Desktop/FastModule/fast_create_module.rb`
+
+When the script finishes executing, if everything goes well, the project directory of `ExampleModule` will look like this:
 
 ```
 .
@@ -76,4 +86,8 @@ After the script is executed, if everything is successful, the directory will be
 
 # At the end
 
-I am just an iOS developer and rarely touch ruby, so this project will have a lot of deficiencies, for reference only. Also welcome questions and help us improve
+I'm just an iOS developer. I've barely touched Ruby except for some basic CocoaPods operations, so this project may have a lot of deficiencies.
+
+If you find something wrong, or have any comments or suggestions, please feel free to give me `issues`.
+
+Finally, I sincerely hope that this project can help you.

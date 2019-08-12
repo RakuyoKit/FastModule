@@ -14,7 +14,7 @@
 
 3. 我使用同一个 `Workspace` 管理上述两个项目，并使用 `CocoaPods` 管理依赖。
 
-4.  `ExampleModuleRouter` 依赖了 `URLNavigator`，作为模块的**路由组件**。
+4.  `ExampleModuleRouter` 依赖了 [URLNavigator](https://github.com/devxoul/URLNavigator)，作为模块的**路由组件**。
 
 5.  `ExampleModule`  会依赖  `ExampleModuleRouter`，具体的内容可以参考本项目的 [Podfile](https://github.com/rakuyoMo/FastModule/blob/master/Podfile) 文件
 
@@ -41,7 +41,7 @@ end
 
 # 举个例子
 
-举个例子，现在我需要一个名为 `ExampleModule` 的组件
+举个例子，现在我需要一个名为 `ExampleModule` 的组件：
 
 1. `fork` 本项目，并在 [fast_create_module.rb](https://github.com/rakuyoMo/FastModule/blob/master/fast_create_module.rb) 中修改 URL 地址。  
 
@@ -49,13 +49,13 @@ end
 
 2. 打开 GitHub 并且创建一个名为 `ExampleModule` 的项目，它的 URL 看起来像是：`https://github.com/rakuyoMo/ExampleModule.git`
 
-3. 克隆这个项目到本地，它的本地路径看起来是：`/Users/rakuyo/Desktop/WorkSpace/ExampleModule`
+3. 克隆这个项目到本地，它的本地路径看起来是：`/Users/rakuyo/Desktop/ExampleModule`
 
-4. `cd /Users/rakuyo/Desktop/WorkSpace/ExampleModule`
+4. `cd /Users/rakuyo/Desktop/ExampleModule`
 
 5. `ruby /Users/rakuyo/Desktop/FastModule/fast_create_module.rb`
 
-当脚本执行完毕时，如果一切成功，`ExampleModule` 的项目目录看起来会是下面这样：
+当脚本执行完毕时，如果一切顺利，`ExampleModule` 的项目目录看起来会是下面这样：
 
 ```
 .
