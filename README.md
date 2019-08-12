@@ -4,7 +4,7 @@
 
 > This project only provides a viable method and implements it. It may not be simple and elegant, but I still hope it will help you.
 
-Quickly create Swift base projects for componentization using Ruby scripts.
+Quickly create Swift base projects for componentization using Ruby scripts and template projects.
 
 This project simplifies many steps based on my personal habits and needs, so it doesn't look so flexible or even difficult to adapt to suit your needs. But don't worry, "Usage Method" introduces the easiest steps to use, and by reading the source code, I believe you can also quickly transform the project to meet your needs.
 
@@ -21,8 +21,6 @@ Having said that, it is necessary to mention "my personal habits":
 5. `ExampleModule` will depend on `ExampleModuleRouter`. For details, please refer to [Podfile](https://github.com/rakuyoMo/FastModule/blob/master/Podfile) file of this project.
 
 # Usage
-
-
 
 1. `fork` this project, then modify the template project according to your needs (remember to replace the git url of the template project in the [fast_create_module.rb](https://github.com/rakuyoMo/FastModule/blob/master/fast_create_module.rb) with the url after your `fork`)
 
@@ -83,6 +81,16 @@ When the script finishes executing, if everything goes well, the project directo
 │   └── URLNavigator.xcodeproj
 └── README.md
 ```
+
+# Why is Ruby?
+
+Speaking of this, it is also the result of exploration... At first, there was no idea about this demand. Later I learned about CocoaPods open source [Xcodeproj](https://github.com/CocoaPods/Xcodeproj).
+
+Initially, I plan to use `Xcodeproj` to create two projects, then configure the project content and add it to `Workspace`. After practice, it was found to be very complicated...
+
+Later, referring to the implementation of `pod lib create`, use the template project instead.
+
+That's it, I didn't use `Xcodeproj` in the end, but the script has already been written, and that's it...
 
 # At the end
 
