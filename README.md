@@ -39,13 +39,15 @@ Wait a moment, you will get the configured project
 
 For example, I now need a component called `ExampleModule`
 
-1. Open GitHub and create a project called `ExampleModule` with an url like this: `https://github.com/rakuyoMo/ExampleModule.git`
+1. `fork` this project and repo url in  [fast_create_module.rb](https://github.com/rakuyoMo/FastModule/blob/master/fast_create_module.rb)
 
-2. Clone this project to the local, the path is probably like this: `/Users/mbcore/Desktop/WorkSpace/ExampleModule`
+2. Open GitHub and create a project called `ExampleModule` with an url like this: `https://github.com/rakuyoMo/ExampleModule.git`
 
-3. `cd /Users/mbcore/Desktop/WorkSpace/ExampleModule`
+3. Clone this project to the local, the path is probably like this: `/Users/mbcore/Desktop/WorkSpace/ExampleModule`
 
-4. `ruby fast_create_module.rb`
+4. `cd /Users/mbcore/Desktop/WorkSpace/ExampleModule`
+
+5. `ruby fast_create_module.rb`
 
 After the script is executed, if everything is successful, the directory will become like this:
 
