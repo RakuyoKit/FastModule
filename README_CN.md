@@ -63,13 +63,13 @@ end
 ├── ExampleModule
 │   ├── ExampleModule
 │   ├── ExampleModule.xcodeproj
-│   ├── Tests
-│   └── UITests
+│   ├── ExampleModuleTests
+│   └── ExampleModuleUITests
 ├── ExampleModule.xcworkspace
 ├── ExampleModuleRouter
 │   ├── ExampleModuleRouter
 │   ├── ExampleModuleRouter.xcodeproj
-│   └── Tests
+│   └── ExampleModuleRouterTests
 ├── Podfile
 ├── Podfile.lock
 ├── Pods

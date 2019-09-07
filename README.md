@@ -65,13 +65,13 @@ When the script finishes executing, if everything goes well, the project directo
 ├── ExampleModule
 │   ├── ExampleModule
 │   ├── ExampleModule.xcodeproj
-│   ├── Tests
-│   └── UITests
+│   ├── ExampleModuleTests
+│   └── ExampleModuleUITests
 ├── ExampleModule.xcworkspace
 ├── ExampleModuleRouter
 │   ├── ExampleModuleRouter
 │   ├── ExampleModuleRouter.xcodeproj
-│   └── Tests
+│   └── ExampleModuleRouterTests
 ├── Podfile
 ├── Podfile.lock
 ├── Pods
