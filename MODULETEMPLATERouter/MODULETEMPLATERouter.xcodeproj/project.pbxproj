@@ -62,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				3AF919AF22FD263500D063BD /* MODULETEMPLATERouter */,
-				3AF919C422FD263600D063BD /* Tests */,
+				3AF919C422FD263600D063BD /* MODULETEMPLATERouterTests */,
 				3AF919AE22FD263500D063BD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,13 +85,13 @@
 			path = MODULETEMPLATERouter;
 			sourceTree = "<group>";
 		};
-		3AF919C422FD263600D063BD /* Tests */ = {
+		3AF919C422FD263600D063BD /* MODULETEMPLATERouterTests */ = {
 			isa = PBXGroup;
 			children = (
 				3AF919C522FD263600D063BD /* Tests.swift */,
 				3AF919C722FD263600D063BD /* Info.plist */,
 			);
-			path = Tests;
+			path = MODULETEMPLATERouterTests;
 			sourceTree = "<group>";
 		};
 		3AF91A0A22FD264F00D063BD /* Other */ = {
