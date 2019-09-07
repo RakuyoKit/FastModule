@@ -38,13 +38,13 @@ class ModuleManager
 		
 		rename
 
-		# remove_project_folder
+		remove_project_folder
 
-		# # create_workspace
+		# create_workspace
 
-		# install_pods
+		install_pods
 
-		# push_to_git
+		push_to_git
 
 	end
 
@@ -84,8 +84,6 @@ class ModuleManager
 			if file !="." and file !=".."
 
 				if File.directory?(file)
-
-					echo file
 
 					real_name = file.gsub("MODULETEMPLATE", @project_name) 
 	
