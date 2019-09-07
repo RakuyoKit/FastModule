@@ -38,13 +38,13 @@ class ModuleManager
 		
 		rename
 
-		remove_project_folder
+		# remove_project_folder
 
-		# create_workspace
+		# # create_workspace
 
-		install_pods
+		# install_pods
 
-		push_to_git
+		# push_to_git
 
 	end
 
@@ -85,6 +85,8 @@ class ModuleManager
 
 				if File.directory?(file)
 
+					echo file
+
 					real_name = file.gsub("MODULETEMPLATE", @project_name) 
 	
 					rename_project(file, now_folder, real_name)
@@ -119,6 +121,13 @@ class ModuleManager
 
 		now_folder = now_folder + "/"
 
+		ui_test_path = now_folder + file + "/" + file + "UITests"
+
+		if File::exists?(ui_test_path) 
+			File.rename(ui_test_path, now_folder + file + "/" + real_name + "UITests")
+		end
+		
+		File.rename(now_folder + file + "/" + file + "Tests", now_folder + file + "/" + real_name + "Tests")
 		File.rename(now_folder + file + "/" + file, now_folder + file + "/" + real_name)
 		File.rename(now_folder + file, now_folder + real_name)
 
