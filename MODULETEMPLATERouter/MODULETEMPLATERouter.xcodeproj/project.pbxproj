@@ -14,6 +14,8 @@
 		3AF919BB22FD263600D063BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF919B922FD263600D063BD /* LaunchScreen.storyboard */; };
 		3AF919C622FD263600D063BD /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF919C522FD263600D063BD /* Tests.swift */; };
 		3AF91CDA22FD5C5200D063BD /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF91CD922FD5C5200D063BD /* Interface.swift */; };
+		3AFDB205236AB2FA00AF5F29 /* MODULETEMPLATERouter.swift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3AFDB203236AB2FA00AF5F29 /* MODULETEMPLATERouter.swift.podspec */; };
+		3AFDB206236AB2FA00AF5F29 /* push.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3AFDB204236AB2FA00AF5F29 /* push.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		3AF919C522FD263600D063BD /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		3AF919C722FD263600D063BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AF91CD922FD5C5200D063BD /* Interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interface.swift; sourceTree = "<group>"; };
+		3AFDB203236AB2FA00AF5F29 /* MODULETEMPLATERouter.swift.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = MODULETEMPLATERouter.swift.podspec; sourceTree = SOURCE_ROOT; };
+		3AFDB204236AB2FA00AF5F29 /* push.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = push.sh; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		3AF919AF22FD263500D063BD /* MODULETEMPLATERouter */ = {
 			isa = PBXGroup;
 			children = (
+				3AFDB204236AB2FA00AF5F29 /* push.sh */,
+				3AFDB203236AB2FA00AF5F29 /* MODULETEMPLATERouter.swift.podspec */,
 				3AF91A0B22FD265A00D063BD /* Router */,
 				3AF91A0A22FD264F00D063BD /* Other */,
 			);
@@ -196,8 +202,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AFDB205236AB2FA00AF5F29 /* MODULETEMPLATERouter.swift.podspec in Resources */,
 				3AF919BB22FD263600D063BD /* LaunchScreen.storyboard in Resources */,
 				3AF919B822FD263600D063BD /* Assets.xcassets in Resources */,
+				3AFDB206236AB2FA00AF5F29 /* push.sh in Resources */,
 				3AF919B622FD263500D063BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
