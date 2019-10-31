@@ -80,7 +80,7 @@ echo "  Start push ${Cyan}$name${Default} at $(date "+%F %r")"
 echo "${Default}========================================================"
 
 # 推送
-pod repo push MBCModuleSpecs $name.podspec --allow-warnings --skip-tests
+pod repo push ** $name.podspec --allow-warnings --skip-tests
 
 # 计算时差
 time=$(( $(date +%s) - $start ))
