@@ -15,6 +15,8 @@
 		3AF919F222FD264900D063BD /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF919F122FD264900D063BD /* Tests.swift */; };
 		3AF919FD22FD264900D063BD /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF919FC22FD264900D063BD /* UITests.swift */; };
 		3AF91CDC22FD5D5E00D063BD /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF91CDB22FD5D5E00D063BD /* Register.swift */; };
+		3AFDB1D2236AA96400AF5F29 /* MODULETEMPLATE.swift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3AFDB1D1236AA96400AF5F29 /* MODULETEMPLATE.swift.podspec */; };
+		3AFDB1D4236AAA0E00AF5F29 /* push.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3AFDB1D3236AAA0E00AF5F29 /* push.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3AF919FC22FD264900D063BD /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		3AF919FE22FD264900D063BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AF91CDB22FD5D5E00D063BD /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		3AFDB1D1236AA96400AF5F29 /* MODULETEMPLATE.swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = MODULETEMPLATE.swift.podspec; sourceTree = SOURCE_ROOT; };
+		3AFDB1D3236AAA0E00AF5F29 /* push.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = push.sh; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		3AF919DB22FD264800D063BD /* MODULETEMPLATE */ = {
 			isa = PBXGroup;
 			children = (
+				3AFDB1D3236AAA0E00AF5F29 /* push.sh */,
+				3AFDB1D1236AA96400AF5F29 /* MODULETEMPLATE.swift.podspec */,
 				3AF91A0E22FD266E00D063BD /* Core */,
 				3AF91A0D22FD266900D063BD /* Router */,
 				3AF91A0C22FD265F00D063BD /* Other */,
@@ -257,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AF919E722FD264900D063BD /* LaunchScreen.storyboard in Resources */,
+				3AFDB1D2236AA96400AF5F29 /* MODULETEMPLATE.swift.podspec in Resources */,
 				3AF919E422FD264900D063BD /* Assets.xcassets in Resources */,
+				3AFDB1D4236AAA0E00AF5F29 /* push.sh in Resources */,
 				3AF919E222FD264800D063BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
