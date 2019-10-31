@@ -87,6 +87,7 @@ class ModuleManager
 
 					real_name = file.gsub("MODULETEMPLATE", @project_name) 
 	
+					rename_podspec(file, now_folder, real_name)
 					rename_project(file, now_folder, real_name)
 					rename_project_folder(file, now_folder, real_name)
 
@@ -100,6 +101,14 @@ class ModuleManager
 
 	end
 
+
+	def rename_podspec(file, now_folder, real_name)
+
+		folder = now_folder + "/" + file + "/"
+
+		File.rename(folder + file + ".swift.podspec", folder + real_name + ".swift.podspec")
+
+	end
 
 	def rename_project(file, now_folder, real_name)
 
